@@ -25,8 +25,9 @@ Otherwise, download the repository and open index.html in a browser that is not 
 
 ## Story Board
 
-Initially, the only thing I knew was that I wanted to do some visualization regarding game play statistics for a board game.  The board itself provides a very natural setting to visualize various game play statistics because placing statistics on the board provides an immediate context.  I decided on using chess data because of its ready availability, long history, and simple board structure.  In order to focus in on a particular aspect of chess, I chose to look at the move probabilities only for the knight.  The knight is a particularly interesting piece because of its unique move pattern.  It can reach every square on the board and is often used very early on in the game, meaning that viewing the move probabilities is meaningful for more than just a couple positions.
+Initially, the only thing I knew was that I wanted to do some visualization regarding game play statistics for a board game.  The board itself provides a very natural setting to visualize various game play statistics because placing statistics on the board provides an immediate context.  I decided on using chess data because of its ready availability, long history, and simple board structure.  In order to focus in on a particular aspect of chess, I chose to look at the move probabilities only for the knight.  The knight is a particularly interesting piece because of its unique move pattern.  It can reach every square on the board and is often used very early on in the game, meaning that viewing the move probabilities is meaningful for more than just a couple positions.  I basically proceeded from the following sketch:
 
+![storyboard](https://raw.githubusercontent.com/CSE512-15S/a3-wfyang/master/storyboard.jpg)
 
 ### Changes between Storyboard and the Final Implementation
 
