@@ -15,7 +15,7 @@ function drawtitle(){
 				   ;
 	var title = d3.select("#title")
 				  .append("text")
-				  .text("Click on a square to view the probability of moves of a knight from that square.  On the selected position, the average number of turns spent on that position without moving is displayed.  Click on any hi-lighted square to clear the selection.  Below the interactive board, you can see the move probabilities for two famous grandmasters.")
+				  .text("Click on a square to view the probability of moves of a knight from that square.  On the selected position, the average number of turns spent on that position until moving from to another square is displayed.  Click on any hi-lighted square to clear the selection.  Below the interactive board, you can see the move probabilities for two famous grandmasters.")
 				  .attr("font-family","sans-serif")
 				  .attr("font-size","40px");
 }

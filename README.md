@@ -7,13 +7,15 @@ a3-wfyang
 
 ## Empirical Knight Move Probabilities
 
-In order to visualize the empirical distribution of move choices by chess players for a knight from a given square, I have created an interactive chess board to view the probability of a given move on the board itself.  When a square is clicked on the main board, the squares where a knight can legally move are hi-lighted and display the conditional probability of moving to that target square conditional on the clicked position.  Below the main board, there are two smaller boards where the corresponding conditional probabilities are displayed for two famous grandmasters: Bobby Fischer and Magnus Carlsen.  At the top of the visualization, users may opt to show all the games, show only the losses, or show only the wins and draws.
+In order to visualize the empirical distribution of move choices by chess players for a knight from a given square, I have created an interactive chess board to view the probability of a given move on the board itself.  When a square is clicked on the main board, the squares where a knight can legally move are hi-lighted and display the conditional probability of moving to that target square conditional on the clicked position. Below the main board, there are two smaller boards where the corresponding conditional probabilities are displayed for two famous grandmasters: Bobby Fischer and Magnus Carlsen.  At the top of the visualization, users may opt to show all the games, show only the losses, or show only the wins and draws.
 
 The data used in the main board is from the Free Internet Chess System games database.  I used a sample of 5000 standard games (15 minutes a side) played in January 2015 with an average FICS rating (between the two players) greater than 2000.  The data is available in pgn format here at http://www.ficsgames.org/download.html .
 
 The Magnus Carlsen data is available at http://www.magnuscarlsenchess.com/games.php
 
 The Bobby Fischer data was obtained from http://www.chess.com/download/view/the-complete-career-of-bobby-fischer
+
+Processing was done using the python package python-chess, available at https://pypi.python.org/pypi/python-chess
 
 ## Running Instructions
 
@@ -23,7 +25,7 @@ Otherwise, download the repository and open index.html in a browser that is not 
 
 ## Story Board
 
-
+Initially, the only thing I knew was that I wanted to do some visualization regarding game play statistics for a board game.  The board itself provides a very natural setting to visualize various game play statistics because placing statistics on the board provides an immediate context.  I decided on using chess data because of its ready availability, long history, and simple board structure.  In order to focus in on a particular aspect of chess, I chose to look at the move probabilities only for the knight.  The knight is a particularly interesting piece because of its unique move pattern.  It can reach every square on the board and is often used very early on in the game, meaning that viewing the move probabilities is meaningful for more than just a couple positions.
 
 
 ### Changes between Storyboard and the Final Implementation
